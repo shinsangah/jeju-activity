@@ -1,0 +1,153 @@
+/* font-family: 'Kirang Haerang' */
+@import url('https://fonts.googleapis.com/css?family=Kirang+Haerang:400');
+/* font-family: 'Do Hyeon'; */
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon:400');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(223, 173, 81);
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+  font-family: 'Kirang Haerang';
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+
+img {
+  display: block;
+  width: 100%;
+  /* filter: grayscale(100%); */
+  mix-blend-mode: luminosity;
+}
+
+img:hover {
+  mix-blend-mode: normal;
+}
+
+.swiper {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 90vw;
+  /* padding-top: 20px; */
+}
+
+.swiper-slide {
+  width: 100%;
+  /* height: 800px; */
+  background-color: #eee;
+}
+
+.text-wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 600px;
+  opacity: 0;
+  margin: auto;
+  text-align: center;
+  transition: .5s;
+  z-index: 1;
+}
+
+.swiper-slide-active .text-wrap {
+  opacity: 1;
+  top: 40%;
+  transition: .5s;
+}
+
+.text-wrap h2 {
+  font-family: 'Do Hyeon';
+  color: #fff;
+  font-size: 60px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.text-wrap p {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 20px;
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 40px;
+  height: 3px;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(223, 173, 81);
+  width: 80px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(252, 238, 211);
+  opacity: 20px;
+  backdrop-filter: blur(3px);
+  background-size: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  /* top: 80px */
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: orange;
+  box-shadow: 0 4px 12px rgba(255, 251, 5, 0.4);
+}
+
+.swiper-button-prev {
+  background-image: url(#);
+  left: 20px;
+}
+
+.swiper-button-prev:hover {
+  background-image: url(#);
+}
+
+.swiper-button-next {
+  background-image: url(#);
+  right: 20px;
+}
+
+.swiper-button-next:hover {
+  background-image: url(#);
+  right: 20px;
+}
