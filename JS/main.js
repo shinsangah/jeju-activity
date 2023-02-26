@@ -1,16 +1,29 @@
+// SWIPER
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // loop: true,
-  spaceBetween: 10,
-  // If we need pagination
+  direction: "horizontal",
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disabledinInteraction: false,
+  },
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
+    clickable: true,
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: ".swiper .swiper-button-prev",
+    nextEl: ".swiper .swiper-button-next",
   },
-
 });
+
+// AutoPlay 컨트롤
+function controlAutoPlay() {
+  if (swiper.autoplay.running === false) {
+    swiper.autoplay.start();
+  } else {
+    swiper.autoplay.stop();
+  }
+}

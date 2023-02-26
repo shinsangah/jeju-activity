@@ -5,7 +5,7 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
 
-
+/* COMMON */
 * {
   box-sizing: border-box;
 }
@@ -29,12 +29,48 @@ img {
   display: block;
   width: 100%;
   /* filter: grayscale(100%); */
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
 }
 
 img:hover {
-  mix-blend-mode: normal;
+  mix-blend-mode: luminosity;
+  filter: none;
 }
+
+/* BUTTON */
+button {
+  position: absolute;
+  width: 10vw;
+  height: 4vh;
+  background-color: rgba(247, 198, 92, 0.12);
+  font-family: 'Noto Sans KR', sans-serif;
+  border: 1px solid white;
+  color: #fff;
+  /* box-shadow: 0 4px 16px rgba(247, 208, 67, 0.4); */
+  font-size: 2vh;
+  font-weight: bold;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  transition: .2s;
+  text-shadow: 3px 3px 8px black;
+  display: block;
+  margin: auto;
+  right: 35vw;
+  bottom: 10vh;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: rgba(223, 173, 81, 0.9);
+  cursor: pointer;
+  /* box-shadow: 0 2px 4px rgba(223, 173, 81, 2.0); */
+  border: none;
+}
+
+/* SWIPER */
 
 .swiper {
   position: relative;
@@ -55,7 +91,7 @@ img:hover {
   top: 50%;
   left: 0;
   right: 0;
-  width: 600px;
+  width: 80vw;
   opacity: 0;
   margin: auto;
   text-align: center;
@@ -64,25 +100,32 @@ img:hover {
 }
 
 .swiper-slide-active .text-wrap {
+  position: fixed;
   opacity: 1;
   top: 40%;
   transition: .5s;
+  width: fit-content;
 }
 
 .text-wrap h2 {
   font-family: 'Do Hyeon';
   color: #fff;
-  font-size: 60px;
+  font-size: 5.5vh;
   line-height: 1.25;
   margin: 0;
+  text-shadow: 3px 3px 8px black;
+  text-align: center;
 }
 
 .text-wrap p {
   font-family: 'Noto Sans KR', sans-serif;
   color: #fff;
-  font-size: 17px;
+  font-size: 2.2vh;
   font-weight: 20px;
   margin-top: 10px;
+  text-align: center;
+  text-shadow: 3px 3px 8px black;
+
 }
 
 .swiper-pagination-bullet {
@@ -93,7 +136,7 @@ img:hover {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgb(223, 173, 81);
+  background-color: rgba(240, 163, 20, 0.249);
   width: 80px;
 }
 
@@ -104,16 +147,16 @@ img:hover {
 
 .swiper-button-next,
 .swiper-button-prev {
-  width: 40px;
-  height: 40px;
-  background-color: rgb(252, 238, 211);
+  /* width: 70px;
+  height: 70px; */
+  /* background-color: rgb(240, 238, 234); */
   opacity: 20px;
-  backdrop-filter: blur(3px);
-  background-size: 18px;
+  /* backdrop-filter: blur(3px); */
+  /* background-size: 25px; */
   background-position: center;
   background-repeat: no-repeat;
   z-index: 2;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   -webkit-transition: 0.4s;
   transition: 0.4s;
   position: absolute;
@@ -124,13 +167,17 @@ img:hover {
 .swiper-rtl .swiper-button-next:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  display: none;
+  display: flex;
+  text-align: center;
+  font-size: 50px;
+  color: orange;
+  left: 20px;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: orange;
-  box-shadow: 0 4px 12px rgba(255, 251, 5, 0.4);
+  font-weight: bold;
+  text-shadow: 0px 2px 2px 5px;
 }
 
 .swiper-button-prev {
@@ -150,4 +197,98 @@ img:hover {
 .swiper-button-next:hover {
   background-image: url(#);
   right: 20px;
+}
+
+/* CONTENTS */
+
+.park {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 90vw;
+  border: 1px solid black;
+}
+
+.runfarm {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 90vw;
+  border: 1px solid black;
+
+}
+
+.bounce {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 90vw;
+  border: 1px solid black;
+
+}
+
+/* 블루원 요트투어 */
+
+.blueone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 90vw;
+}
+
+figure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+figure .text {
+  position: absolute;
+  display: block;
+  justify-content: center;
+  top: -6%;
+  right: -43%;
+  /* bottom: 60%; */
+  translate: 0, -50%;
+}
+
+figure .text .blueonejeju {
+  font: 7vw/1 'Do Hyeon';
+  font-style: italic;
+  color: rgb(166, 195, 239);
+  text-shadow: 3px 3px 8px black;
+
+}
+
+figure .text .package {
+  margin: -9vh 3vw;
+  font: 4.5vw/1 'Do Hyeon';
+  color: rgb(149, 193, 255);
+  text-shadow: 3px 3px 8px black;
+
+}
+
+figure .text .bluecnt {
+
+  font: 0.4vw/-2 'Noto Sans KR';
+  color: rgba(246, 249, 252, 0.841);
+  text-align: center;
+}
+
+/* SURFING */
+
+.surfing {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 90vw;
+  border: 1px solid black;
 }
