@@ -11,7 +11,8 @@
 }
 
 body {
-  background-color: rgb(223, 173, 81);
+  background-color: rgb(223, 173, 82);
+  opacity: 43%;
 }
 
 header {
@@ -25,14 +26,14 @@ header {
 }
 
 
-img {
+.swiper-slide img {
   display: block;
   width: 100%;
   /* filter: grayscale(100%); */
   mix-blend-mode: normal;
 }
 
-img:hover {
+.swiper-slide img:hover {
   mix-blend-mode: luminosity;
   filter: none;
 }
@@ -49,7 +50,7 @@ button {
   /* box-shadow: 0 4px 16px rgba(247, 208, 67, 0.4); */
   font-size: 2vh;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 30px;
   transform: translate(-50%, -50%);
   transition: .2s;
   text-shadow: 3px 3px 8px black;
@@ -200,28 +201,50 @@ button:hover {
 }
 
 /* CONTENTS */
+/* 981파크 */
 
 .park {
   position: relative;
   margin: auto;
-  width: 100%;
+  justify-content: center;
+  display: flex;
+  width: auto;
+  height: 30vw;
   max-width: 90vw;
   border: 1px solid black;
 }
+
+.park .store981 {
+  position: absolute;
+  width: auto;
+  height: 90vh;
+  left: 70px;
+  padding: 20vh 60px;
+}
+
+/* 렛츠런팜 */
 
 .runfarm {
   position: relative;
   margin: auto;
-  width: 100%;
+  justify-content: center;
+  display: flex;
+  width: auto;
+  height: 30vw;
   max-width: 90vw;
   border: 1px solid black;
 
 }
 
+/* 바운스슈퍼파크 */
+
 .bounce {
   position: relative;
   margin: auto;
-  width: 100%;
+  justify-content: center;
+  display: flex;
+  width: auto;
+  height: 30vw;
   max-width: 90vw;
   border: 1px solid black;
 
@@ -232,7 +255,7 @@ button:hover {
 .blueone {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 70vh;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -241,6 +264,12 @@ button:hover {
   margin: auto;
   width: 100%;
   max-width: 90vw;
+}
+
+.blueone>p {
+  position: absolute;
+  color: white;
+  height: 30vw;
 }
 
 figure video {
@@ -283,12 +312,15 @@ figure .text .bluecnt {
   text-align: center;
 }
 
-/* SURFING */
+/* 카이트 서핑 */
 
 .surfing {
   position: relative;
   margin: auto;
-  width: 100%;
+  justify-content: center;
+  display: flex;
+  width: auto;
+  height: 30vw;
   max-width: 90vw;
   border: 1px solid black;
 }

@@ -27,3 +27,8 @@ function controlAutoPlay() {
     swiper.autoplay.stop();
   }
 }
+
+// Y축 전체길이 확인
+window.addEventListener('scroll', function () {
+  console.log(window.scrollX)
+});
