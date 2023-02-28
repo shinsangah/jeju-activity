@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: rgb(220, 194, 145);
+  /* background-color: rgb(220, 194, 145); */
 }
 
 header {
@@ -204,84 +204,156 @@ button:hover {
 
 .park981 {
   position: relative;
-  margin: auto;
+  margin-top: 6%;
   justify-content: center;
   display: flex;
   width: auto;
-  height: 30vw;
+  height: 80vw;
   max-width: 90vw;
-  border: 1px solid black;
+}
+
+.park981 img {
+  position: absolute;
+  margin: 0;
+}
+
+.park981 .cloud1 {
+  position: absolute;
+  top: -5vh;
+  left: 30vw;
+  width: 31vw;
+}
+
+.park981 .cloud2 {
+  position: absolute;
+  left: 0;
+  width: 22vw;
+  opacity: 60%;
+  top: 11vh;
+}
+
+.park981 .building {
+  position: absolute;
+  left: 0;
+  top: 5vh;
+  width: 50vw;
+}
+
+.park981 .screengame {
+  width: auto;
+  height: 60vh;
+  top: 40vh;
+  right: -4vw;
+}
+
+.park981 .cart {
+  width: 40vw;
+  left: 9vw;
+  top: 60vh;
+  z-index: -1;
+}
+
+.park981 .phone {
+  /* display: none; */
+  top: 60.5vh;
 }
 
 .parkdes1 {
   position: absolute;
+  left: 4vw;
+  top: 5.5vh;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
 }
 
 .parkdes2 {
   position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  right: -2vw;
+  top: 104vh;
 }
 
 .contact981 {
-  position: absolute;
-  /* border: 1px solid black;
-  background-color: black;
-  opacity: 60%; */
+  position: relative;
 }
 
 .background981 {
   position: absolute;
-  border: 1px solid black;
-  background-color: black;
-  opacity: 60%;
+  background-color: rgba(20, 20, 20, 0.188);
+  width: 20vw;
+  height: 33vh;
+  right: -45vw;
 }
 
 .contact981 p {
+  position: absolute;
   font-family: 'Noto Sans KR', sans-serif;
-  color: white;
-  margin: 10% 10% 0% 10%;
-  font-size: 18px;
+  color: black;
+  margin: 8% 8% 0% 8%;
+  font-size: 17.5px;
+  color: black;
+  font-weight: 500;
 }
 
 .contact981 .sns {
+  position: absolute;
   display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-
+  /* justify-content: center; */
+  /* margin-top: 10%; */
+  /* margin: 8% 8% 0% 8%; */
+  margin-top: 24.2vh;
+  margin-left: 2.4vw;
 }
 
 .contact981 .sns>li>a {
   display: block;
-  text-align: center;
-  margin: 0px 3px;
-  border-radius: 100%;
-
   background-color: black;
+  text-align: center;
+  border-radius: 100%;
+  margin: 0px 20px 0px 0px;
 }
 
 .contact981 .sns>li>a>i {
   color: white;
   border-radius: 100%;
   text-align: center;
-  margin: 0px 3px;
+  /* margin: 0px 3px; */
   padding: 10px;
-  opacity: 1;
-  /* z-index: 2; */
 
 }
 
 
 /* 렛츠런팜 */
 
-.runfarm {
+.letsrunfarm .runfarm1 {
   position: relative;
   margin: auto;
   justify-content: center;
   display: flex;
-  width: auto;
-  height: 30vw;
-  max-width: 90vw;
-  border: 1px solid black;
+  top: -20vh;
+}
 
+.letsrunfarm .runfarm2 {
+  position: absolute;
+  right: 0;
+  top: 320vh;
+}
+
+.letsrunfarm .runfarm3 {
+  position: absolute;
+  right: 0;
+  top: 295vh;
+  width: auto;
+  height: 55vh;
+}
+
+.letsrunfarm .runfarm4 {
+  position: absolute;
+  left: 0;
+  top: 260vh;
+  width: auto;
+  /* height: 50vh; */
 }
 
 /* 바운스슈퍼파크 */
@@ -303,7 +375,6 @@ button:hover {
 .blueone {
   position: absolute;
   width: 100%;
-  height: 70vh;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -314,10 +385,9 @@ button:hover {
   max-width: 90vw;
 }
 
-.blueone>p {
-  position: absolute;
-  color: white;
-  height: 30vw;
+
+figure {
+  margin: 0;
 }
 
 figure video {
@@ -327,38 +397,6 @@ figure video {
   object-fit: cover;
 }
 
-figure .text {
-  position: absolute;
-  display: block;
-  justify-content: center;
-  top: -6%;
-  right: -43%;
-  /* bottom: 60%; */
-  translate: 0, -50%;
-}
-
-figure .text .blueonejeju {
-  font: 7vw/1 'Do Hyeon';
-  font-style: italic;
-  color: rgb(166, 195, 239);
-  text-shadow: 3px 3px 8px black;
-
-}
-
-figure .text .package {
-  margin: -9vh 3vw;
-  font: 4.5vw/1 'Do Hyeon';
-  color: rgb(149, 193, 255);
-  text-shadow: 3px 3px 8px black;
-
-}
-
-figure .text .bluecnt {
-
-  font: 0.4vw/-2 'Noto Sans KR';
-  color: rgba(246, 249, 252, 0.841);
-  text-align: center;
-}
 
 /* 카이트 서핑 */
 
