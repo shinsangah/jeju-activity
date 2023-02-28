@@ -11,8 +11,7 @@
 }
 
 body {
-  background-color: rgb(223, 173, 82);
-  opacity: 43%;
+  background-color: rgb(220, 194, 145);
 }
 
 header {
@@ -203,7 +202,7 @@ button:hover {
 /* CONTENTS */
 /* 981파크 */
 
-.park {
+.park981 {
   position: relative;
   margin: auto;
   justify-content: center;
@@ -214,13 +213,62 @@ button:hover {
   border: 1px solid black;
 }
 
-.park .store981 {
+.parkdes1 {
   position: absolute;
-  width: auto;
-  height: 90vh;
-  left: 70px;
-  padding: 20vh 60px;
 }
+
+.parkdes2 {
+  position: absolute;
+}
+
+.contact981 {
+  position: absolute;
+  /* border: 1px solid black;
+  background-color: black;
+  opacity: 60%; */
+}
+
+.background981 {
+  position: absolute;
+  border: 1px solid black;
+  background-color: black;
+  opacity: 60%;
+}
+
+.contact981 p {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+  margin: 10% 10% 0% 10%;
+  font-size: 18px;
+}
+
+.contact981 .sns {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+
+}
+
+.contact981 .sns>li>a {
+  display: block;
+  text-align: center;
+  margin: 0px 3px;
+  border-radius: 100%;
+
+  background-color: black;
+}
+
+.contact981 .sns>li>a>i {
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  margin: 0px 3px;
+  padding: 10px;
+  opacity: 1;
+  /* z-index: 2; */
+
+}
+
 
 /* 렛츠런팜 */
 
