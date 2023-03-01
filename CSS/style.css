@@ -1,6 +1,10 @@
-/* 개선 필요 점 */
+/* 개선 필요 점 (23.03.01) */
+
 /* 링크 동그란 버튼에 hover 주면 시각적인 효과 주기 */
 /* DETAILS, 제목에만 글자 굵기 변경하기 */
+/* - inner 크기에 맞게 배치 완료 끝내놓기 (% 적용) */
+/* 책모양 느낌 같은 것 오른쪽에 fixed 해놓기 */
+/* 카이트 서핑에 슬기 CSS .shine 효과 끌고 오기 */
 
 
 /* font-family: 'Kirang Haerang' */
@@ -11,15 +15,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
 /* font-family: 'Lobster', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Josefin Slab'; */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap");
 
-
-/* MAIN HAEDER, FOOTER */
+/* MAIN HAEDER */
 
 /* COMMON */
+
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  line-height: normal;
+}
+
+figure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.inner {
+  width: 1900px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid black;
+}
 
 header {
   padding: 20px;
