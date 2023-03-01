@@ -29,6 +29,6 @@ function controlAutoPlay() {
 }
 
 // Y축 전체길이 확인
-window.addEventListener('scroll', function () {
-  console.log(window.scrollX)
-});
+// window.addEventListener('scroll', function () {
+//   console.log(window.scrollX)
+// });
