@@ -59,7 +59,7 @@ figure video {
 .inner {
   position: relative;
   width: 1920px;
-  height: 7000px;
+  height: px;
   margin: auto;
   border: 1px solid black;
 }
@@ -240,7 +240,7 @@ button:hover {
 .inner .park981 {
   position: relative;
   width: 100%;
-  height: auto;
+  height: auoto;
 }
 
 .inner .park981 .bigcloud {
@@ -252,10 +252,11 @@ button:hover {
 
 .inner .park981 .smallcloud {
   position: absolute;
-  top: -5%;
+  top: -1%;
   left: 2%;
   width: 20%;
-  opacity: 60%;
+  opacity: 50%;
+  z-index: 0;
 }
 
 .inner .park981 img .building {
@@ -273,7 +274,6 @@ button:hover {
   left: 26%;
   width: 40%;
   top: 89%;
-  /* z-index: 1; */
 }
 
 .inner .park981 .parktext1 {
@@ -485,7 +485,7 @@ button:hover {
   font-weight: 600;
   font-family: 'Noto Sans KR', sans-serif;
   margin: 20px 0;
-  top: 340%;
+  top: 343%;
   left: 41.3%;
 }
 
@@ -559,11 +559,10 @@ button:hover {
   position: absolute;
   font-family: 'Noto Sans KR', sans-serif;
   color: black;
-  top: 500vh;
-  font-weight: 500;
-  font-size: 1.3vw;
+  top: 1750px;
+  font-weight: 550;
+  font-size: 26px;
   left: 5%;
-  top: 220vh;
 }
 
 /* 카이트서핑 CONTACT*/
@@ -571,12 +570,12 @@ button:hover {
 .inner .kitesurfing .contactkite {
   position: absolute;
   left: 2.5%;
-  top: 1720px;
+  top: 1280px;
 }
 
 .inner .kitesurfing .contactkite .backgroundkite {
   position: absolute;
-  background-color: rgba(27, 70, 16, 0.284);
+  background-color: rgba(159, 189, 208, 0.284);
   width: 480px;
   height: 332px;
 }
@@ -584,7 +583,7 @@ button:hover {
 .inner .kitesurfing .contactkite .backgroundkite>p {
   position: absolute;
   font-family: 'Noto Sans KR', sans-serif;
-  color: black;
+  color: #fff;
   margin: 8% 8% 2% 8%;
   font-size: 21px;
   font-weight: 500;
@@ -613,102 +612,63 @@ button:hover {
   padding: 10px;
 }
 
+/* ARROW 블루원요트클럽 */
+
+.bluearrow {
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 20px 0;
+  top: 550%;
+  left: 40%;
+}
+
+.bluearrow span {
+  font-size: 70px;
+}
+
 
 /* 블루원 요트투어 */
 
-/* .blueone {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.blueone1 {
-  margin: auto;
-  top: 210vh;
-  overflow: hidden;
-  z-index: 1;
-  position: relative;
-}
-
-.blueonetitle {
+.inner .blueone {
   position: absolute;
-  font-family: 'Lobster', cursive;
-  color: white;
-  font-size: 4.3vw;
-  font-style: italic;
-  font-weight: lighter;
-  text-shadow: 1px 2px 5px black;
-  z-index: 1;
-  top: 215vh;
-  left: 3vw;
-right: 0;
+  width: 100%;
+  height: auto;
+  top: 570%;
 }
 
-.bluedes {
+.inner .blueone .blueone1 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+}
+
+.inner .blueone .blueonetitle {
+  position: absolute;
+  font-family: 'Josefin Slab';
+  color: rgba(244, 247, 250, 0.964);
+  font-size: 75px;
+  font-weight: bold;
+  z-index: 1;
+  text-shadow: 1px 2px 5px black;
+  right: 8%;
+  top: 100px;
+}
+
+.inner .blueone .bluedes {
   position: absolute;
   font-family: 'Noto Sans KR', sans-serif;
   color: black;
-  font-size: 2.5vw;
-  font-weight: bold;
-  z-index: 4;
-  top: 320vh;
-  left: 16vw;
-  padding-bottom: 5vh;
+  top: 1150px;
   justify-content: center;
-}
-
-*/
-/* 블루원 요트투어 CONTACT*/
-/* 어디갔니! */
-
-/* .contactblue {
-  position: absolute;
-  top: 293vh;
-  left: -22vw;
-  z-index: 3;
-  width: 100%;
-}
-
-.backgroundblue {
-  position: absolute;
-  background-color: rgba(222, 230, 238, 0.188);
-  width: 20vw;
-  height: 33vh;
-  right: 54vw;
-  bottom: -9vw;
-  z-index: 1;
-}
-
-.contactblue p {
-  position: absolute;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: white;
-  margin: 8% 8% 0% 8%;
-  font-size: 1.1vw;
-  font-weight: 500;
-}
-
-.contactblue .sns {
-  position: absolute;
-  display: flex;
-  margin-top: 24.2vh;
-  margin-left: 2.4vw;
-}
-
-.contactblue .sns>li>a {
-  display: block;
-  background-color: black;
-  text-align: center;
-  border-radius: 100%;
-  margin: 0px 20px 0px 0px;
-}
-
-.contactblue .sns>li>a>i {
-  color: white;
-  border-radius: 100%;
-  text-align: center;
-  margin: 0px 3px;
-padding: 10px;
+  font-weight: 600;
+  font-size: 50px;
+  left: 16%;
 }
 
 .bluecontainer {
@@ -725,16 +685,78 @@ padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+  top: 10px;
 }
 
 .bluecon1>img {
-  width: 30vw;
+  width: 100%;
   height: auto;
   margin: 10px 10px;
-  max-width: 100%;
 }
 
-*/
+.bluecon2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bluecon2>img {
+  width: 100%;
+  width: 90%;
+  height: auto;
+  margin: 10px 10px;
+}
+
+
+/* 블루원 요트투어 CONTACT*/
+
+.inner .blueone .contactblue {
+  position: absolute;
+  left: 2.5%;
+  top: 700px;
+}
+
+.inner .blueone .contactblue .backgroundblue {
+  position: absolute;
+  background-color: rgba(159, 189, 208, 0.284);
+  width: 480px;
+  height: 332px;
+}
+
+.inner .blueone .contactblue .backgroundblue>p {
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  margin: 8% 8% 2% 8%;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.inner .blueone .contactblue .backgroundblue>.sns {
+  position: absolute;
+  display: flex;
+  margin-top: 53%;
+  margin-left: 8%;
+}
+
+.inner .blueone .contactblue .backgroundblue .sns>li>a {
+  display: block;
+  background-color: black;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 20%;
+  margin: 0px 20px 0px 0px;
+}
+
+.inner .blueone .contactblue .backgroundblue .sns>li>a>i {
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
 /* .banner {
   position: relative;
   display: inline-block;
