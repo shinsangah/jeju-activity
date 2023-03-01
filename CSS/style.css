@@ -592,9 +592,10 @@ button:hover {
   font-style: italic;
   font-weight: lighter;
   text-shadow: 1px 2px 5px black;
-  z-index: 5;
+  z-index: 1;
   top: 215vh;
-  left: 3vw;
+  /* left: 3vw; */
+  right: 0;
 }
 
 .bluedes {

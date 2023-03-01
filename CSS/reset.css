@@ -20,3 +20,10 @@ figure video {
   -o-object-fit: cover;
   object-fit: cover;
 }
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid black;
+}
