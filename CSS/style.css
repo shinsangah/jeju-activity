@@ -9,6 +9,8 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon:400');
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+/* font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /* COMMON */
 * {
@@ -571,31 +573,183 @@ button:hover {
 
 /* 블루원 요트투어 */
 
-.blueone {}
+.blueone {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
 .blueone1 {
   position: absolute;
   width: 100%;
-  top: 200vh;
+  margin: auto;
+  top: 210vh;
   left: 0;
   overflow: hidden;
   z-index: 1;
   position: relative;
-  margin: 0;
 }
 
-
-figure {
-  margin: 0;
+.blueonetitle {
+  position: absolute;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 4.3vw;
+  font-style: italic;
+  font-weight: lighter;
+  text-shadow: 1px 2px 5px black;
+  z-index: 5;
+  top: 215vh;
+  left: 3vw;
 }
 
-figure video {
+.bluedes {
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: black;
+  font-size: 2.5vw;
+  font-weight: bold;
+  z-index: 4;
+  top: 320vh;
+  left: 16vw;
+  padding-bottom: 5vh;
+  justify-content: center;
+}
+
+/* 블루원 요트투어 CONTACT*/
+/* 어디갔니! */
+
+.contactblue {
+  position: absolute;
+  top: 293vh;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  left: 51vw;
 }
 
+.backgroundblue {
+  position: absolute;
+  background-color: rgba(222, 230, 238, 0.188);
+  width: 20vw;
+  height: 33vh;
+  right: 54vw;
+  bottom: -9vw;
+  z-index: 1;
+}
+
+.contactblue p {
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+  margin: 8% 8% 0% 8%;
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.contactblue .sns {
+  position: absolute;
+  display: flex;
+  margin-top: 24.2vh;
+  margin-left: 2.4vw;
+}
+
+.contactblue .sns>li>a {
+  display: block;
+  background-color: black;
+  text-align: center;
+  border-radius: 100%;
+  margin: 0px 20px 0px 0px;
+}
+
+.contactblue .sns>li>a>i {
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  /* margin: 0px 3px; */
+  padding: 10px;
+}
+
+.bluecontainer {
+  position: relative;
+  top: 241.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bluecon1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bluecon1>img {
+  width: 30vw;
+  height: auto;
+  margin: 10px 10px;
+  max-width: 100%;
+}
+
+.banner {
+  position: relative;
+  display: inline-block;
+}
+
+.banner .ytitle,
+.banner .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%);
+  display: none;
+  width: 100%;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+}
+
+.banner::before,
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 95%;
+  transform: (-50%, -50%);
+  transition: all .8s;
+}
+
+.banner::before {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 0;
+}
+
+.banner::after {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  height: 0;
+}
+
+.bluecon2 {
+  position: absolute;
+  top: 16.5vh;
+  width: 20px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bluecon2>img {
+  width: 30vw;
+  height: auto;
+  margin: 10px 10px;
+}
 
 /* 바운스슈퍼파크 */
 
@@ -604,8 +758,8 @@ figure video {
   margin: auto;
   justify-content: center;
   display: flex;
-  width: auto;
-  height: 30vw;
+  width: 20px;
+  height: auto;
   max-width: 90vw;
   border: 1px solid black;
 
