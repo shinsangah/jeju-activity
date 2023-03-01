@@ -41,6 +41,7 @@ ol {
 
 figure {
   margin: 0;
+  width: 100%;
 }
 
 p {
@@ -67,12 +68,17 @@ figure video {
   margin-left: 20px;
 }
 
+.swiper-slide a {
+  justify-content: center;
+  text-align: center;
+}
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 1920px;
   height: 50%;
   mix-blend-mode: normal;
+  overflow: hidden;
 }
 
 .swiper-slide img:hover {
@@ -89,7 +95,6 @@ button {
   font-family: 'Noto Sans KR', sans-serif;
   border: 1px solid white;
   color: #fff;
-  /* box-shadow: 0 4px 16px rgba(247, 208, 67, 0.4); */
   font-size: 2vh;
   font-weight: bold;
   border-radius: 30px;
@@ -97,11 +102,8 @@ button {
   transition: .2s;
   text-shadow: 3px 3px 8px black;
   display: block;
-  margin: auto;
-  right: 0;
-  /* bottom: 10vh; */
-  justify-content: center;
-  text-align: center;
+  bottom: 20%;
+  left: 50%;
 }
 
 button:focus {
@@ -284,11 +286,11 @@ button:hover {
   width: 60vw;
 }
 
-.park981 .screengame {
-  width: auto;
-  height: 60vh;
-  top: 40vh;
-  right: -4vw;
+.park981 .cart1 {
+  width: 52%;
+  height: auto;
+  top: 35%;
+  right: 0;
 }
 
 .park981 .cart {
@@ -326,7 +328,7 @@ button:hover {
 
 .contact981 {
   position: absolute;
-  left: 37%;
+  right: 22%;
   top: 5%
 }
 
@@ -335,7 +337,6 @@ button:hover {
   background-color: rgba(20, 20, 20, 0.188);
   width: 20vw;
   height: 33vh;
-  right: -49vw;
 }
 
 .contact981 p {
@@ -343,7 +344,7 @@ button:hover {
   font-family: 'Noto Sans KR', sans-serif;
   color: black;
   margin: 8% 8% 0% 8%;
-  font-size: 1.1vw;
+  font-size: 1vw;
   color: black;
   font-weight: 500;
 }
