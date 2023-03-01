@@ -17,6 +17,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* font-family: 'Josefin Slab'; */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@0;1&display=swap");
+/* font-family: 'Gloock', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
 
 /* MAIN HAEDER */
 
@@ -61,7 +64,7 @@ figure video {
   width: 1920px;
   height: px;
   margin: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 
@@ -438,7 +441,7 @@ button:hover {
 
 .inner .letsrunfarm .contactrun .backgroundrun {
   position: absolute;
-  background-color: rgba(27, 70, 16, 0.284);
+  background-color: rgba(35, 97, 19, 0.13);
   width: 480px;
   height: 332px;
 }
@@ -500,6 +503,7 @@ button:hover {
   width: 100%;
   height: auto;
   top: 362%;
+  margin-bottom:
 }
 
 .inner .kitesurfing .kite1 {
@@ -650,14 +654,14 @@ button:hover {
 
 .inner .blueone .blueonetitle {
   position: absolute;
-  font-family: 'Josefin Slab';
-  color: rgba(244, 247, 250, 0.964);
-  font-size: 75px;
-  font-weight: bold;
+  font-family: 'Gloock', serif;
+  color: rgba(234, 244, 254, 0.964);
+  font-size: 95px;
+  font-weight: 500;
   z-index: 1;
   text-shadow: 1px 2px 5px black;
-  right: 8%;
-  top: 100px;
+  right: 5%;
+  top: 94px;
 }
 
 .inner .blueone .bluedes {
@@ -673,7 +677,7 @@ button:hover {
 
 .bluecontainer {
   position: relative;
-  top: 241.5vh;
+  top: 1450px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -685,14 +689,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  top: 10px;
+  margin-top: 5px;
+  /* display: none; */
 }
 
 .bluecon1>img {
-  width: 100%;
+  width: 610px;
   height: auto;
-  margin: 10px 10px;
+  margin: 20px 20px;
 }
 
 .bluecon2 {
@@ -700,13 +704,13 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 185px;
 }
 
 .bluecon2>img {
-  width: 100%;
-  width: 90%;
+  width: 610px;
   height: auto;
-  margin: 10px 10px;
+  margin: 20px 20px;
 }
 
 
