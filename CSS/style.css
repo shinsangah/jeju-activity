@@ -133,7 +133,7 @@ button:hover {
 
 .text-wrap {
   position: absolute;
-  top: 50%;
+  top: 30vh;
   left: 0;
   right: 0;
   width: 80vw;
@@ -142,14 +142,16 @@ button:hover {
   text-align: center;
   transition: .5s;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.545);
 }
 
 .swiper-slide-active .text-wrap {
   position: fixed;
   opacity: 1;
-  top: 40%;
+  top: 36%;
   transition: .5s;
   width: fit-content;
+  padding: 20px 20px;
 }
 
 .text-wrap h2 {
@@ -157,7 +159,6 @@ button:hover {
   color: #fff;
   font-size: 58px;
   line-height: 1.5;
-  margin: 0;
   text-shadow: 3px 3px 8px black;
   text-align: center;
 }
@@ -761,88 +762,22 @@ button:hover {
   padding: 10px;
 }
 
-/* .banner {
-  position: relative;
-  display: inline-block;
-}
+/* ARROW 바운스 슈퍼파크 */
 
-.banner .ytitle,
-.banner .content {
+.bouncearrow {
   position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%);
-  display: none;
-  width: 100%;
-  font-size: 70px;
-  color: #fff;
-  font-weight: 900;
   text-align: center;
+  color: black;
+  font-size: 27px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 20px 0;
+  top: 2050px;
+  left: 40%;
 }
 
-.banner::before,
-.banner::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 95%;
-  height: 95%;
-  transform: (-50%, -50%);
-  transition: all .8s;
+.bouncearrow span {
+  font-size: 70px;
 }
 
-.banner::before {
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  width: 0;
-}
-
-.banner::after {
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
-  height: 0;
-}
-
-.banner:hover .ytitle,
-.banner:hover .content {
-  display: block;
-}
-
-.banner:hover::before {
-  width: 95%;
-}
-
-.banner:hover::after {
-  width: 95%;
-} */
-
-/* .bluecon2 {
-  position: absolute;
-  top: 16.5vh;
-  width: 20px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bluecon2>img {
-  width: 30vw;
-  height: auto;
-  margin: 10px 10px;
-} */
-
-/* 바운스슈퍼파크 */
-
-/* .bounce {
-  position: relative;
-  margin: auto;
-  justify-content: center;
-  display: flex;
-  width: 20px;
-  height: auto;
-  max-width: 90vw;
-  border: 1px solid black;
-
-} */
+/* 바운스 슈퍼파크 */
