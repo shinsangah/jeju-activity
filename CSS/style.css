@@ -12,14 +12,14 @@
 /* font-family: 'Lobster', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+
+/* MAIN HAEDER, FOOTER */
+
 /* COMMON */
 * {
   box-sizing: border-box;
 }
 
-body {
-  /* background-color: rgb(220, 194, 145); */
-}
 
 header {
   padding: 20px;
