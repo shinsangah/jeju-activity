@@ -20,6 +20,11 @@
 
 /* MAIN HAEDER */
 
+header {
+  height: 100px;
+  width: 1920px;
+}
+
 /* COMMON */
 
 * {
@@ -56,10 +61,6 @@ figure video {
   border: 1px solid black;
 }
 
-header {
-  padding: 20px;
-}
-
 .logo {
   font-family: 'Kirang Haerang';
   font-size: 50px;
@@ -70,7 +71,7 @@ header {
 .swiper-slide img {
   display: block;
   width: 100%;
-  /* filter: grayscale(100%); */
+  height: 50%;
   mix-blend-mode: normal;
 }
 
@@ -82,8 +83,8 @@ header {
 /* BUTTON */
 button {
   position: absolute;
-  width: 10vw;
-  height: 4vh;
+  width: 10%;
+  height: 7%;
   background-color: rgba(247, 198, 92, 0.12);
   font-family: 'Noto Sans KR', sans-serif;
   border: 1px solid white;
@@ -97,8 +98,10 @@ button {
   text-shadow: 3px 3px 8px black;
   display: block;
   margin: auto;
-  right: 35vw;
-  bottom: 10vh;
+  right: 0;
+  /* bottom: 10vh; */
+  justify-content: center;
+  text-align: center;
 }
 
 button:focus {
@@ -261,9 +264,9 @@ button:hover {
 
 .park981 .cloud1 {
   position: absolute;
-  top: -5vh;
-  left: 30vw;
-  width: 31vw;
+  top: -5%;
+  left: 39%;
+  width: 38%;
 }
 
 .park981 .cloud2 {
@@ -277,8 +280,8 @@ button:hover {
 .park981 .building {
   position: absolute;
   left: 0;
-  top: 5vh;
-  width: 50vw;
+  top: 12%;
+  width: 60vw;
 }
 
 .park981 .screengame {
@@ -303,8 +306,8 @@ button:hover {
 
 .parkdes1 {
   position: absolute;
-  left: 4vw;
-  top: 5.5vh;
+  left: 4%;
+  top: 2%;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.1vw;
   font-weight: 500;
@@ -322,7 +325,9 @@ button:hover {
 /* 981파크 CONTACT*/
 
 .contact981 {
-  position: relative;
+  position: absolute;
+  left: 37%;
+  top: 5%
 }
 
 .background981 {
@@ -346,8 +351,8 @@ button:hover {
 .contact981 .sns {
   position: absolute;
   display: flex;
-  margin-top: 24.2vh;
-  margin-left: 2.4vw;
+  margin-top: 65%;
+  margin-left: 8%;
 }
 
 .contact981 .sns>li>a {
@@ -355,6 +360,7 @@ button:hover {
   background-color: black;
   text-align: center;
   border-radius: 100%;
+  font-size: 20%;
   margin: 0px 20px 0px 0px;
 }
 
@@ -362,7 +368,6 @@ button:hover {
   color: white;
   border-radius: 100%;
   text-align: center;
-  /* margin: 0px 3px; */
   padding: 10px;
 }
 
