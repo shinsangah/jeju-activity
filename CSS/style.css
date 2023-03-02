@@ -371,6 +371,7 @@ button:hover {
   margin: 30px 0;
   top: 132%;
   left: 42%;
+  padding-top: 30px;
 }
 
 .runarrow span {
@@ -793,3 +794,190 @@ button:hover {
 }
 
 /* 바운스 슈퍼파크 */
+
+.inner .bouncesuper {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 800%;
+  margin-bottom:
+}
+
+.inner .bouncesuper .bouncetitle {
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  background-color: rgba(28, 11, 65, 0.483);
+  padding: 20px 20px;
+  font-size: 50px;
+  font-weight: 550;
+  font-style: italic;
+  right: 5%;
+  top: 3500px;
+  z-index: 1;
+}
+
+.inner .bouncesuper .bouncebg {
+  position: absolute;
+  width: 100%;
+  top: 2250px;
+}
+
+.inner .bouncesuper .bouncechild1 {
+  position: absolute;
+  top: 2700px;
+  width: 50%;
+  left: 10%;
+  filter: drop-shadow(5px 5px 3px #bcb2b2);
+  z-index: 1;
+}
+
+.inner .bouncesuper .bouncechild2 {
+  position: absolute;
+  top: 2200px;
+  width: 43%;
+  right: 8%;
+  filter: drop-shadow(5px 5px 3px #bcb2b2);
+  z-index: 1;
+}
+
+.inner .bouncesuper .bumperbg {
+  position: absolute;
+  top: 3680px;
+  width: 100%;
+  height: auto;
+}
+
+.inner .bouncesuper .bumpercar1 {
+  position: absolute;
+  top: 4570px;
+  width: 50%;
+  left: 0;
+  transform: rotate(4deg);
+  filter: drop-shadow(5px 5px 5px #000000);
+  z-index: 1;
+
+}
+
+.inner .bouncesuper .bumpercar2 {
+  position: absolute;
+  top: 4650px;
+  width: 35%;
+  right: 0;
+  transform: rotate(-3deg);
+  filter: drop-shadow(5px 5px 5px #000000);
+  z-index: 1;
+}
+
+.inner .bouncesuper .playground1 {
+  position: absolute;
+  top: 700px;
+  width: 50%;
+  right: 0;
+}
+
+.inner .bouncesuper .playground2 {
+  position: absolute;
+  top: 700px;
+  width: 50%;
+  right: 0;
+}
+
+.inner .bouncesuper .bouncetext1 {
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: black;
+  top: 3750px;
+  font-size: 26px;
+  left: 5%;
+  background-color: rgba(232, 232, 232, 0.475);
+  padding: 20px 20px;
+  font-weight: 550;
+}
+
+.inner .bouncesuper .bouncetext2 {
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: black;
+  top: 6250px;
+  font-size: 26px;
+  left: 5%;
+  font-weight: 550;
+  padding-bottom: 50px;
+}
+
+.inner .bouncesuper .playground {
+  position: relative;
+  top: 4590px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+}
+
+.inner .bouncesuper .playground1 {
+  position: absolute;
+  width: 50%;
+  height: 900px;
+  flex-grow: 1;
+  left: 0;
+}
+
+.inner .bouncesuper .playground2 {
+  position: absolute;
+  width: 50%;
+  height: 900px;
+  flex-grow: 1;
+  right: 0;
+
+}
+
+/* 바운스슈퍼파크 CONTACT*/
+
+.inner .bouncesuper .contactbounce {
+  position: absolute;
+  left: 2.5%;
+  top: 3260px;
+}
+
+.inner .bouncesuper .contactbounce .backgroundbounce {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.446);
+  width: 480px;
+  height: 332px;
+}
+
+.inner .bouncesuper .contactbounce .backgroundbounce>p {
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  margin: 8% 8% 2% 8%;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.inner .bouncesuper .contactbounce .backgroundbounce>.sns {
+  position: absolute;
+  display: flex;
+  margin-top: 53%;
+  margin-left: 8%;
+}
+
+.inner .bouncesuper .contactbounce .backgroundbounce .sns>li>a {
+  display: block;
+  background-color: black;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 20%;
+  margin: 0px 20px 0px 0px;
+}
+
+.inner .bouncesuper .contactbounce .backgroundbounce .sns>li>a>i {
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  padding: 10px;
+}
