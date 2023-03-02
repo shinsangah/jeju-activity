@@ -319,9 +319,27 @@ button:hover {
 .inner .park981 .movecart {
   position: absolute;
   opacity: 86%;
-  left: 26%;
+  left: 5%;
+  /* right: 0; */
   width: 40%;
   top: -50px;
+  animation: movecar 1s infinite alternate;
+}
+
+.ease_in_out {
+  top: 200px;
+  animation-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes movecar {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 500px;
+  }
 }
 
 /* .inner .park981 .movecart:hover {
@@ -442,11 +460,45 @@ button:hover {
 
 .inner .letsrunfarm .horse {
   position: absolute;
-  width: 50%;
+  width: 53%;
   height: auto;
   top: 750px;
-  right: 5px;
+  right: 10px;
+  z-index: 1;
   /* 말+사람 이미지에 쉐도우 주기 */
+  filter: drop-shadow(5px 5px 6px #000000);
+  animation: horse 1s infinite alternate;
+}
+
+.horse_ease_in_out {
+  top: 100px;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes horse {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+
+  25% {
+    transform: rotate(2deg) translateX(50px);
+  }
+
+  50% {
+    transform: rotate(-2deg) translateX(100px);
+  }
+
+  100% {
+    transform: rotate(2deg) translateX(150px);
+  }
+
+  from {
+    right: 0px;
+  }
+
+  to {
+    right: 100px;
+  }
 }
 
 .inner .letsrunfarm .horsetree {
@@ -455,6 +507,38 @@ button:hover {
   height: auto;
   left: 0;
   top: 1480px;
+  transform: rotate('5', '5');
+  animation: compare 2s infinite alternate;
+}
+
+.ease {
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes compare {
+
+  /* from {
+    left: 10x;
+  }
+
+  to {
+    left: 200px;
+  } */
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+
+  25% {
+    transform: rotate(5deg) translateX(50px);
+  }
+
+  50% {
+    transform: rotate(-5deg) translateX(100px);
+  }
+
+  100% {
+    transform: rotate(5deg) translateX(150px);
+  }
 }
 
 .inner .letsrunfarm .grass {
@@ -555,7 +639,19 @@ button:hover {
   width: 100%;
   height: auto;
   top: 362%;
-  margin-bottom:
+}
+
+.inner .kitesurfing .kitetitle {
+  position: absolute;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: rgba(244, 247, 250, 0.964);
+  font-size: 57px;
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  text-shadow: 1px 2px 5px black;
+  left: 9.5%;
+  top: 115px;
 }
 
 .inner .kitesurfing .kite1 {
@@ -596,19 +692,6 @@ button:hover {
   width: 50%;
   right: 0;
   z-index: 1;
-}
-
-.inner .kitesurfing .kitetitle {
-  position: absolute;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: rgba(244, 247, 250, 0.964);
-  font-size: 57px;
-  font-weight: bold;
-  z-index: 1;
-  text-align: center;
-  text-shadow: 1px 2px 5px black;
-  left: 9.5%;
-  top: 115px;
 }
 
 .inner .kitesurfing .kitetext {
@@ -952,7 +1035,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
   z-index: 1;
 }
 
