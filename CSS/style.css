@@ -323,7 +323,8 @@ button:hover {
   /* right: 0; */
   width: 40%;
   top: -50px;
-  animation: movecar 1s infinite alternate;
+  animation: movecar 2.3s infinite alternate;
+  overflow: hidden;
 }
 
 .ease_in_out {
@@ -334,11 +335,11 @@ button:hover {
 
 @-webkit-keyframes movecar {
   from {
-    left: 0px;
+    left: 1500px;
   }
 
   to {
-    left: 500px;
+    left: 60px;
   }
 }
 
@@ -465,9 +466,9 @@ button:hover {
   top: 750px;
   right: 10px;
   z-index: 1;
-  /* 말+사람 이미지에 쉐도우 주기 */
   filter: drop-shadow(5px 5px 6px #000000);
   animation: horse 1s infinite alternate;
+  overflow: hidden;
 }
 
 .horse_ease_in_out {
@@ -676,6 +677,27 @@ button:hover {
   width: 30%;
   right: 0;
   z-index: 1;
+  animation: wing1 3s infinite alternate;
+  overflow: hidden;
+}
+
+@-webkit-keyframes wing1 {
+
+  0% {
+    transform: translateX(30px);
+  }
+
+  25% {
+    transform: translateY(150px);
+  }
+
+  50% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateY(150px);
+  }
 }
 
 .inner .kitesurfing .wing2 {
@@ -684,6 +706,27 @@ button:hover {
   width: 35%;
   left: 0;
   z-index: 1;
+  animation: wing2 2s infinite alternate;
+  overflow: hidden;
+}
+
+.wing2_ease_in_out {
+  top: 100px;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wing2 {
+  from {
+    bottom: 300px;
+  }
+
+  to {
+    top: 400px;
+  }
+
+  100% {
+    transform: translateX(70px);
+  }
 }
 
 .inner .kitesurfing .wing3 {
@@ -692,6 +735,24 @@ button:hover {
   width: 50%;
   right: 0;
   z-index: 1;
+  animation: wing3 2s infinite alternate;
+  overflow: hidden;
+}
+
+.wing3_ease_in_out {
+  top: 100px;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wing3 {
+  from {
+    bottom: 20px;
+  }
+
+  to {
+    top: 1350px;
+  }
+
 }
 
 .inner .kitesurfing .kitetext {
@@ -946,20 +1007,59 @@ button:hover {
 
 .inner .bouncesuper .bouncechild1 {
   position: absolute;
-  top: 2700px;
-  width: 50%;
-  left: 10%;
+  top: 570%;
+  width: 40%;
+  left: 15%;
   filter: drop-shadow(5px 5px 3px #bcb2b2);
   z-index: 1;
+  animation: ball 2.5s infinite alternate;
+  overflow: hidden;
 }
+
+@keyframes ball {
+  0% {
+    transform: translateY(100px);
+  }
+
+  25% {
+    transform: translateY(-300px);
+  }
+}
+
 
 .inner .bouncesuper .bouncechild2 {
   position: absolute;
-  top: 2200px;
-  width: 43%;
+  top: 2250px;
+  width: 35%;
   right: 8%;
   filter: drop-shadow(5px 5px 3px #bcb2b2);
   z-index: 1;
+  /* transform: rotate(-90deg) infinite; */
+  animation: rotate 3s Infinite;
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  0% {
+    background-position: bottom;
+    transform: translateY(300px);
+  }
+
+  25% {
+    /* background-position: right bottom; */
+    transform: translateY(480px);
+  }
+
+  50% {
+    background-position: bottom;
+    transform: rotate(60deg);
+  }
+
+  100% {
+    background-position: bottom;
+    transform: rotate(360deg);
+
+  }
 }
 
 .inner .bouncesuper .bumperbg {
@@ -977,18 +1077,53 @@ button:hover {
   transform: rotate(4deg);
   filter: drop-shadow(5px 5px 5px #000000);
   z-index: 1;
-
+  animation: bumper1 3s linear infinite;
+  /* transform-origin: 50% 50%; */
 }
+
+@-webkit-keyframes bumper1 {
+  0% {
+    left: 5px;
+  }
+
+  100% {
+    left: 950px;
+  }
+}
+
+/* @keyframes bumper1 {
+  100% {
+    transform: rotate(360deg);
+  }
+} */
 
 .inner .bouncesuper .bumpercar2 {
   position: absolute;
-  top: 4650px;
+  top: 3800px;
   width: 35%;
-  right: 0;
+  right: 10%;
   transform: rotate(-3deg);
   filter: drop-shadow(5px 5px 5px #000000);
   z-index: 1;
+  animation: bumper2 2s infinite;
+  transform-origin: 50% 50%;
 }
+
+@keyframes bumper2 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* @-webkit-keyframes bumper2 {
+  0% {
+    left: 800px;
+  }
+
+  100% {
+    left: 1300px;
+  }
+} */
 
 .inner .bouncesuper .playground1 {
   position: absolute;
@@ -1100,4 +1235,20 @@ button:hover {
   border-radius: 100%;
   text-align: center;
   padding: 10px;
+}
+
+/* 상단 이동하기 버튼 */
+.btn_gotop {
+  display: block;
+  position: fixed;
+  bottom: 35px;
+  left: 30px;
+  z-index: 999;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.btn_gotop img {
+  width: 20%;
+  opacity: 40%;
 }
