@@ -1,10 +1,11 @@
-/* 개선 필요 점 (23.03.01) */
+/* 개선 필요 점 (23.03.02) */
 
+/* 메인 헤더, 날씨 API 넣어야 함 */
+/* 위치 뜨게 하는 지도 넣어야 함 */
 /* 링크 동그란 버튼에 hover 주면 시각적인 효과 주기 */
 /* DETAILS, 제목에만 글자 굵기 변경하기 */
-/* inner 크기에 맞게 배치 완료 끝내놓기 (% 적용) */
-/* 책모양 느낌 같은 것 오른쪽에 fixed 해놓기 */
-/* 카이트 서핑에 슬기 CSS .shine 효과 끌고 오기 */
+/* 책모양 느낌 같은 것 가능하다면 오른쪽에 fixed 해놓기 */
+/* 슈퍼바운스 마지막 사진 2장에 슬기 CSS .shine 효과 끌고 오기 */
 
 
 /* font-family: 'Kirang Haerang' */
@@ -121,7 +122,7 @@ button:hover {
 
 .swiper {
   position: relative;
-  margin-bottom: 13%;
+  margin-bottom: 21%;
   width: 100%;
   /* max-width: 90vw; */
 }
@@ -251,37 +252,68 @@ button:hover {
 }
 
 /* CONTENTS */
+
+/* ARROW 981파크 */
+.parkarrow {
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  top: -43.5%;
+  left: 42%;
+  z-index: 1;
+}
+
+.parkarrow>span {
+  font-size: 70px;
+}
+
 /* 981파크 */
 
 .inner .park981 {
   position: relative;
   width: 100%;
-  height: auoto;
+  height: auto;
 }
 
 .inner .park981 .bigcloud {
   position: absolute;
-  top: -13%;
+  top: 50%;
   left: 22%;
   width: 30%;
+  transform: translateY(-43%);
+  z-index: 1;
 }
+
+/* .inner .park981 .bigcloud:hover {
+  transform: translateY(200px);
+  transition: 2s;
+} */
 
 .inner .park981 .smallcloud {
   position: absolute;
-  top: -1%;
+  top: -5%;
   left: 2%;
   width: 20%;
+  transform: translateY(-20%);
   opacity: 50%;
-  z-index: 0;
+  z-index: 1;
 }
+
+/* .inner .park981 .smallcloud:hover {
+  transform: translateY(200px);
+  transition: 2s;
+} */
 
 .inner .park981 img .building {
   position: absolute;
   left: 0;
-  /* top: 50%; */
   width: 100%;
   height: auto;
-  z-index: 1;
 }
 
 .inner .park981 .movecart {
@@ -289,8 +321,13 @@ button:hover {
   opacity: 86%;
   left: 26%;
   width: 40%;
-  top: 89%;
+  top: -50px;
 }
+
+/* .inner .park981 .movecart:hover {
+  transform: translateX(-1000px);
+  transition: 1s;
+} */
 
 .inner .park981 .parktext1 {
   position: absolute;
@@ -316,6 +353,7 @@ button:hover {
   position: absolute;
   left: 2%;
   top: 93%;
+  /* margin-top: 30px; */
 }
 
 .inner .park981 .contact981 .background981 {

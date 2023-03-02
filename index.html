@@ -29,9 +29,19 @@
   <link rel="stylesheet" href="./CSS/style.css">
 
   <script defer src="JS/main.js"></script>
+
+  <!-- 스크롤에 따른 애니메이션 효과 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 </head>
 
 <body>
+
+  <script>
+    AOS.init(); 
+  </script>
 
   <!-- HEADER -->
   <header>
@@ -110,39 +120,61 @@
 
     <figure>
 
+      <!-- 981파크 INFORMATION -->
+      <div class="parkarrow">
+        <p class="parkinfo">'9.81파크' INFORMATION</p>
+        <span class="material-symbols-outlined">
+          keyboard_double_arrow_down
+        </span>
+      </div>
+
       <!-- 981파크 -->
       <div class="park981">
-        <img class="building" src="./image/981des.png" alt="981 building"></img>
-        <img class="bigcloud" src="./image/cloud.png" alt="big cloud"></img>
-        <img class="smallcloud" src="./image/cloud.png" alt="small cloud"></img>
-        <img class="movecart" src="./image/movecart.png" alt="move cart"></img>
-        <p class="parktext1">제주도의 중심 한라산과 비양도를 품은 푸른 바다를 마주하는 실외 공간과<br />
-          ‘iF 디자인 어워드’를 수상한 감각적인 실내 공간을 모두 경험할 수 있는 테마파크,<br />
-          제주의 자연과 어우러져 새로운 형태의 스마트하고 다채로운 어트랙션과 트렌디한 부대시설을 즐길 수 있습니다.</p>
-        <p class="parktext2">무동력카트에 ICT기술을 더한 '그래비티 레이싱'을 비롯,<br />
-          실내 스포츠 게임과 VR 레이싱을 경험할 수 있는 체험형 게임존 ‘LAB 981’,<br />
-          다양한 브랜드 상품을 판매하는 브랜드 스토어 ‘GARAGE 981’ 등이 마련되어 있습니다.</p>
-        <div class="contact981">
-          <div class="background981">
-            <p>DETAILS<br /><br />
-              9.81파크<br />
-              제주 제주시 애월읍 천덕로 880-24<br />
-              휴무일 : 없음<br />
-              이용시간 : 09:00~18:30</p>
-            <ul class="sns">
-              <li><a href='tel:064-1833-9810'><i class="material-symbols-outlined">
-                    phone_in_talk</i></a></li>
-              <li><a href='#'><i class="material-symbols-outlined">
-                    location_on
-                  </i></a></li>
-              <li><a href="#"><i class="material-symbols-outlined">
-                    share</i></a></li>
-              <li><a href="http://www.981park.com/"><i class="material-symbols-outlined">
-                    house</i></a></li>
-            </ul>
+        <div classn="park981contain">
+          <div data-aos="fade-up" data-aos-duration="500">
+            <img class="bigcloud" src="./image/cloud.png" alt="big cloud"></img>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <img class="smallcloud" src="./image/cloud.png" alt="small cloud"></img>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <img class="building" src="./image/981des.png" alt="981 building"></img>
+            <p class="parktext1">제주도의 중심 한라산과 비양도를 품은 푸른 바다를 마주하는 실외 공간과<br />
+              ‘iF 디자인 어워드’를 수상한 감각적인 실내 공간을 모두 경험할 수 있는 테마파크,<br />
+              제주의 자연과 어우러져 새로운 형태의 스마트하고 다채로운 어트랙션과 트렌디한 부대시설을 즐길 수 있습니다.</p>
+            <p class="parktext2">무동력카트에 ICT기술을 더한 '그래비티 레이싱'을 비롯,<br />
+              실내 스포츠 게임과 VR 레이싱을 경험할 수 있는 체험형 게임존 ‘LAB 981’,<br />
+              다양한 브랜드 상품을 판매하는 브랜드 스토어 ‘GARAGE 981’ 등이 마련되어 있습니다.</p>
+          </div>
+          <div data-aos="fade-left" data-aos-offset="400" data-aos-duration="4000">
+            <img class="movecart" src="./image/movecart.png" alt="move cart"></img>
+          </div>
+
+
+          <div class="contact981">
+            <div class="background981">
+              <p>DETAILS<br /><br />
+                9.81파크<br />
+                제주 제주시 애월읍 천덕로 880-24<br />
+                휴무일 : 없음<br />
+                이용시간 : 09:00~18:30</p>
+              <ul class="sns">
+                <li><a href='tel:064-1833-9810'><i class="material-symbols-outlined">
+                      phone_in_talk</i></a></li>
+                <li><a href='#'><i class="material-symbols-outlined">
+                      location_on
+                    </i></a></li>
+                <li><a href="#"><i class="material-symbols-outlined">
+                      share</i></a></li>
+                <li><a href="http://www.981park.com/"><i class="material-symbols-outlined">
+                      house</i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
+
 
       <!-- 렛츠런팜 INFORMATION -->
       <div class="runarrow">
@@ -153,6 +185,7 @@
       </div>
 
       <!-- 렛츠런팜 -->
+
       <div class="letsrunfarm">
         <video class="farmvideo" src="./video/runfarm.mp4" autoplay muted loop alt="letsrunfarm main"></video>
         <img class="farmbus" src="./image/runfarm2.jpg" alt="runfarm bus"></img>
@@ -201,6 +234,7 @@
       </div>
 
       <!--  카이트서핑-->
+
       <div class="kitesurfing">
         <p class="kitetitle">“미끄러지듯 물 위를 달리고, 바람을 타고 날아오르는 짜릿한 기분!”</p>
         <img class="kite1" src="./image/kite1.jpg" alt="카이트서핑1"></img>
