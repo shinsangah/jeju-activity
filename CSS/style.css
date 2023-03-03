@@ -10,8 +10,6 @@
 
 /* font-family: 'Kirang Haerang' */
 @import url('https://fonts.googleapis.com/css?family=Kirang+Haerang:400');
-/* font-family: 'Do Hyeon'; */
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon:400');
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
 /* font-family: 'Lobster', cursive; */
@@ -246,7 +244,7 @@ button:hover {
 .text-wrap p {
   font-family: 'Noto Sans KR', sans-serif;
   color: #fff;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 20px;
   margin-top: 10px;
   text-align: center;
