@@ -65,11 +65,9 @@ figure video {
 .inner {
   position: relative;
   width: 1920px;
-  height: px;
   margin: auto;
   /* border: 1px solid black; */
 }
-
 
 .swiper-slide a {
   justify-content: center;
@@ -142,7 +140,7 @@ button:hover {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgba(240, 163, 20, 0.249);
+  background-color: rgba(168, 166, 164, 0.249);
   width: 80px;
 }
 
@@ -169,7 +167,7 @@ button:hover {
   display: flex;
   text-align: center;
   font-size: 50px;
-  color: orange;
+  color: rgba(62, 59, 59, 0.212);
   left: 20px;
 }
 
@@ -945,7 +943,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-top: 5px;
-
 }
 
 .bluecon1>img {
@@ -1080,7 +1077,7 @@ figure.snip1384 h3 {
   text-transform: uppercase;
   opacity: 0;
   padding-bottom: 3px;
-  color: rgba(245, 248, 249, 0.93);
+  color: rgba(255, 255, 255, 0.96);
   text-shadow: 3px 3px 8px black;
 }
 
