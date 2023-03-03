@@ -29,3 +29,21 @@ function controlAutoPlay() {
 }
 
 // 제목 클릭해서 스크롤 이동
+
+
+
+// ARROW 클릭해서 스크롤 페이지 이동
+const park981 = document.querySelector('.park981');
+const park981Height = 1066;
+const firstarrow = document.querySelector('.firstarrow')
+
+let firstarrowClick = function () {
+  window.scroll({
+    behavior: "smooth",
+    top: park981Height,
+    left: 0
+  })
+}
+
+firstarrow.addEventListener("click", firstarrowClick)
+
