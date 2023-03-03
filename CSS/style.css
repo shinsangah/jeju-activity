@@ -1080,7 +1080,8 @@ figure.snip1384 h3 {
   text-transform: uppercase;
   opacity: 0;
   padding-bottom: 3px;
-  color: rgba(232, 239, 243, 0.93)
+  color: rgba(245, 248, 249, 0.93);
+  text-shadow: 3px 3px 8px black;
 }
 
 figure.snip1384 p {
@@ -1091,6 +1092,7 @@ figure.snip1384 p {
   top: 50%;
   -webkit-transform: translateY(40px);
   transform: translateY(40px);
+  text-shadow: 3px 3px 3px black;
 }
 
 figure.snip1384:hover img,
