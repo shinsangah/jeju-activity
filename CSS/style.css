@@ -53,6 +53,10 @@ p {
   line-height: normal;
 }
 
+.strong {
+  font-weight: 600;
+}
+
 figure video {
   width: 100%;
   height: 100%;
@@ -132,61 +136,6 @@ button:hover {
   background-color: #eee;
 }
 
-.text-wrap {
-  position: absolute;
-  top: 30vh;
-  left: 0;
-  right: 0;
-  width: 80vw;
-  opacity: 0;
-  margin: auto;
-  text-align: center;
-  transition: .5s;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.545);
-  border-radius: 20px;
-}
-
-.text-wrap:hover {
-  background-color: rgba(223, 173, 81, 0.537);
-  cursor: pointer;
-  /* box-shadow: 0 2px 4px rgba(223, 173, 81, 2.0); */
-  border: none;
-}
-
-.text-wrap:active {
-  outline: none;
-}
-
-.swiper-slide-active .text-wrap {
-  position: fixed;
-  opacity: 1;
-  top: 36%;
-  transition: .5s;
-  width: fit-content;
-  padding: 40px 40px;
-}
-
-.text-wrap h2 {
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #fff;
-  font-size: 58px;
-  line-height: 1.5;
-  text-shadow: 3px 3px 8px black;
-  text-align: center;
-}
-
-.text-wrap p {
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 20px;
-  margin-top: 10px;
-  text-align: center;
-  text-shadow: 3px 3px 8px black;
-
-}
-
 .swiper-pagination-bullet {
   width: 40px;
   height: 3px;
@@ -251,6 +200,134 @@ button:hover {
   right: 20px;
 }
 
+/* TEXT-WRAP BUTTON */
+
+/* .text-wrap {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  right: 0;
+  width: 80vw;
+  opacity: 0;
+  margin: auto;
+  text-align: center;
+  transition: .5s;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.545);
+  border-radius: 20px;
+} */
+
+.text-wrap {
+  position: absolute;
+  /* background-color: rgba(0, 0, 0, 0.545); */
+  top: 290.5px;
+  left: 573px;
+  width: 774px;
+  height: 200px;
+  text-align: center;
+  padding: 1em 2em;
+  justify-content: center;
+  border: none;
+  /* border-radius: .6rem; */
+  cursor: pointer;
+  /* overflow: hidden; */
+  z-index: 1;
+}
+
+.text-wrap h2 {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-size: 58px;
+  line-height: 1.5;
+  text-shadow: 3px 3px 8px black;
+  text-align: center;
+}
+
+.text-wrap p {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 20px;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 3px 3px 8px black;
+}
+
+.text-wrap span {
+  opacity: 0;
+}
+
+/* .text-wrap:hover {
+  background-color: rgba(223, 173, 81, 0.537);
+  cursor: pointer;
+  border: none;
+}
+
+.text-wrap:active {
+  outline: none;
+}
+
+.swiper-slide-active .text-wrap {
+  position: fixed;
+  opacity: 1;
+  top: 36%;
+  transition: .5s;
+  width: fit-content;
+  padding: 40px 40px;
+} */
+
+.text-wrap span:not(:nth-child(6)) {
+  position: absolute;
+  left: 390px;
+  top: 95px;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  background-color: #d79c2ddd;
+  opacity: 40%;
+  border-radius: 50%;
+  transition: .6s ease;
+  z-index: -1;
+}
+
+.text-wrap span:nth-child(1) {
+  transform: translate(-3.1em, -4em);
+  opacity: 0;
+}
+
+.text-wrap span:nth-child(2) {
+  transform: translate(-10em, 1.3em);
+  opacity: 0;
+
+
+}
+
+.text-wrap span:nth-child(3) {
+  transform: translate(-.2em, 5em);
+  opacity: 0;
+
+}
+
+.text-wrap span:nth-child(4) {
+  transform: translate(3em, 1.4em);
+  opacity: 0;
+
+}
+
+.text-wrap span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+  opacity: 0;
+
+}
+
+.text-wrap:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+  opacity: 20%;
+
+}
+
+
 /* CONTENTS */
 
 /* ARROW 981파크 */
@@ -264,7 +341,7 @@ button:hover {
   margin-top: 150px;
   margin-bottom: 200px;
   top: -43.5%;
-  left: 42%;
+  left: 805px;
   z-index: 1;
 }
 
@@ -290,11 +367,6 @@ button:hover {
   z-index: 1;
 }
 
-/* .inner .park981 .bigcloud:hover {
-  transform: translateY(200px);
-  transition: 2s;
-} */
-
 .inner .park981 .smallcloud {
   position: absolute;
   top: -5%;
@@ -304,11 +376,6 @@ button:hover {
   opacity: 50%;
   z-index: 1;
 }
-
-/* .inner .park981 .smallcloud:hover {
-  transform: translateY(200px);
-  transition: 2s;
-} */
 
 .inner .park981 img .building {
   position: absolute;
@@ -321,7 +388,6 @@ button:hover {
   position: absolute;
   opacity: 86%;
   left: 5%;
-  /* right: 0; */
   width: 40%;
   top: -50px;
   animation: movecar 2.3s infinite alternate;
@@ -343,11 +409,6 @@ button:hover {
     left: 60px;
   }
 }
-
-/* .inner .park981 .movecart:hover {
-  transform: translateX(-1000px);
-  transition: 1s;
-} */
 
 .inner .park981 .parktext1 {
   position: absolute;
@@ -373,7 +434,6 @@ button:hover {
   position: absolute;
   left: 2%;
   top: 93%;
-  /* margin-top: 30px; */
 }
 
 .inner .park981 .contact981 .background981 {
@@ -384,7 +444,6 @@ button:hover {
 }
 
 .inner .park981 .contact981 .background981>p {
-  /* position: absolute; */
   font-family: 'Noto Sans KR', sans-serif;
   color: black;
   margin: 8% 8% 2% 8%;
@@ -400,7 +459,6 @@ button:hover {
 }
 
 .inner .park981 .contact981 .background981 .sns>li>a {
-  /* position: absolute; */
   display: block;
   background-color: black;
   text-align: center;
@@ -410,7 +468,6 @@ button:hover {
 }
 
 .inner .park981 .contact981 .background981 .sns>li>a>i {
-  /* position: absolute; */
   color: white;
   border-radius: 100%;
   text-align: center;
@@ -434,6 +491,7 @@ button:hover {
 
 .runarrow span {
   font-size: 70px;
+  cursor: pointer;
 }
 
 
@@ -632,6 +690,7 @@ button:hover {
 
 .kitearrow span {
   font-size: 70px;
+  cursor: pointer;
 }
 
 
@@ -829,6 +888,7 @@ button:hover {
 
 .bluearrow span {
   font-size: 70px;
+  cursor: pointer;
 }
 
 
@@ -1080,6 +1140,7 @@ figure.snip1384.hover i {
 
 .bouncearrow span {
   font-size: 70px;
+  cursor: pointer;
 }
 
 
