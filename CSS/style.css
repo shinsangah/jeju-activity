@@ -213,6 +213,7 @@ figure video {
 .inner {
   position: relative;
   width: 1920px;
+  height: auto;
   margin: auto;
 }
 
@@ -1670,8 +1671,8 @@ figure.snip1384.hover i {
 .btn_gotop {
   display: block;
   position: fixed;
-  bottom: 35px;
-  left: 30px;
+  bottom: 90px;
+  left: 18px;
   z-index: 999;
   cursor: pointer;
   border-radius: 50%;
@@ -1680,4 +1681,33 @@ figure.snip1384.hover i {
 .btn_gotop img {
   width: 20%;
   opacity: 40%;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #E0E0E0;
+  margin-top: 11500px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  height: 40px;
+  background-size: cover;
+  background-color: white;
+  margin-right: 30px;
+}
+
+footer ul li {
+  color: black;
+  font-weight: 100;
+  font-size: 12px;
+  /* font-style: italic; */
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 1px;
 }
