@@ -575,6 +575,60 @@ figure video {
   padding: 10px;
 }
 
+/* 팝업 버튼 누르 나오는 상자 */
+
+/* 뒤에 꺼멓게 칠해지는 부분임 */
+/* 뒤에가 클릭이 되지 않게 하려고, 팝업만 클릭이 되려고 하는 것임 */
+/* .dim {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.5s;
+} */
+
+.popup1 {
+  position: absolute;
+  left: 760px;
+  top: -800px;
+  z-index: 5;
+  transform: translate(-50%, 50%);
+  width: 900px;
+  height: 490px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.668);
+  border-radius: 10px;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.popup1>.map1 {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  width: 800px;
+  height: 449px;
+}
+
+.popup1>a {
+  position: absolute;
+  right: 25px;
+  color: rgb(182, 178, 178);
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup1:target {
+  opacity: 1;
+}
+
 
 /* ARROW 렛츠런팜 */
 .runarrow {
@@ -775,6 +829,46 @@ figure video {
   padding: 10px;
 }
 
+.popup2 {
+  position: absolute;
+  left: 780px;
+  top: -800px;
+  z-index: 5;
+  transform: translate(-50%, 50%);
+  width: 900px;
+  height: 490px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.668);
+  border-radius: 10px;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.popup2>.map2 {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  width: 800px;
+  height: 449px;
+}
+
+.popup2>a {
+  position: absolute;
+  right: 25px;
+  color: rgb(182, 178, 178);
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup2:target {
+  opacity: 1;
+}
+
+
 /* ARROW 카이트서핑 */
 
 .kitearrow {
@@ -973,6 +1067,45 @@ figure video {
   padding: 10px;
 }
 
+.popup3 {
+  position: absolute;
+  left: 740px;
+  top: -800px;
+  z-index: 5;
+  transform: translate(-50%, 50%);
+  width: 900px;
+  height: 490px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.668);
+  border-radius: 10px;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.popup3>.map3 {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  width: 800px;
+  height: 449px;
+}
+
+.popup3>a {
+  position: absolute;
+  right: 25px;
+  color: rgb(182, 178, 178);
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup3:target {
+  opacity: 1;
+}
+
 /* ARROW 블루원요트클럽 */
 
 .bluearrow {
@@ -1116,6 +1249,46 @@ figure video {
   border-radius: 100%;
   text-align: center;
   padding: 10px;
+}
+
+
+.popup4 {
+  position: absolute;
+  left: 740px;
+  top: -380px;
+  z-index: 10;
+  transform: translate(-50%, 50%);
+  width: 900px;
+  height: 490px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.668);
+  border-radius: 10px;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.popup4>.map4 {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  width: 800px;
+  height: 449px;
+}
+
+.popup4>a {
+  position: absolute;
+  right: 25px;
+  color: rgb(182, 178, 178);
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup4:target {
+  opacity: 1;
 }
 
 /* 블루원 요트투어 요트 설명 */
@@ -1489,6 +1662,45 @@ figure.snip1384.hover i {
   border-radius: 100%;
   text-align: center;
   padding: 10px;
+}
+
+.popup5 {
+  position: absolute;
+  left: 760px;
+  top: -770px;
+  z-index: 10;
+  transform: translate(-50%, 50%);
+  width: 900px;
+  height: 490px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.668);
+  border-radius: 10px;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.popup5>.map5 {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  width: 800px;
+  height: 449px;
+}
+
+.popup5>a {
+  position: absolute;
+  right: 25px;
+  color: rgb(182, 178, 178);
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup5:target {
+  opacity: 1;
 }
 
 /* 상단 이동하기 버튼 */
