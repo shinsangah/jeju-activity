@@ -30,18 +30,18 @@
 
 /* MAIN HAEDER */
 
-header {
+/* header {
   height: 100px;
   width: 1920px;
-}
+} */
 
 header {
   position: fixed;
   height: 100px;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 2;
-  width: 100vw;
   background-color: transparent;
 }
 
